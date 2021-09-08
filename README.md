@@ -11,6 +11,4 @@ This project showcases the beautiful possibility of paginating pages on the fron
 ---
 
 **Notes**
-_This mini project is ideal for limited number of pages._
-_By adding addtional logic, it can be used with infinite amount of pages as well_
-_The scss files have been kept for future references_
+_This mini project is ideal for limited number of pages. By adding addtional logic, it can be used with infinite amount of pages as well._
