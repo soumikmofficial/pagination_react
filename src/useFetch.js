@@ -11,8 +11,7 @@ function useFetch(url) {
       const data = await response.json();
 
       if (data) {
-        setProfiles(data);
-        paginate(data);
+        setProfiles(paginate(data));
       } else {
         setProfiles([]);
       }

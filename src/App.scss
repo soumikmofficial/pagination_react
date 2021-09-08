@@ -16,25 +16,60 @@ html {
   width: 100%;
   @include flex-center;
   flex-direction: column;
-  height: 100vh;
+  padding: 2rem 0;
+  min-height: 100vh;
   & h1 {
     color: $col_1;
+    font-size: 3rem;
+    margin-bottom: 3rem;
   }
 
   & .card-container {
-    height: 70vh;
-    overflow: hidden;
     width: 60%;
-    max-height: 80vh;
     background-color: $col_2;
     @include flex-center;
     flex-wrap: wrap;
-    margin: 4rem 0 3.5rem;
+    margin: 2rem 0 2rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   & .page-container {
-    width: 30%;
-    background: $col_1;
-    height: 4rem;
+    width: 70%;
+    @include flex-center;
+    flex-wrap: wrap;
+    & button {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.3rem;
+      border: none;
+      border-radius: 50%;
+      margin: 0.5rem 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.active {
+        color: $col_1;
+        background: rgb(37, 37, 37);
+      }
+    }
+
+    & .prev,
+    & .next {
+      color: white;
+      font-size: 1.5rem;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    & .prev {
+      margin-right: 1.5rem;
+    }
+
+    & .next {
+      margin-left: 1.5rem;
+    }
   }
 }

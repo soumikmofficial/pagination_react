@@ -26,18 +26,18 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
+  padding: 2rem 0;
+  min-height: 100vh;
 }
 
 .App h1 {
   color: white;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .App .card-container {
-  height: 70vh;
-  overflow: hidden;
   width: 60%;
-  max-height: 80vh;
   background-color: #8a3838;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,12 +50,60 @@ html {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 4rem 0 3.5rem;
+  margin: 2rem 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .App .card-container {
+    width: 100%;
+  }
 }
 
 .App .page-container {
-  width: 30%;
-  background: white;
-  height: 4rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.App .page-container button {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.App .page-container button.active {
+  color: white;
+  background: #252525;
+}
+
+.App .page-container .prev,
+.App .page-container .next {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.App .page-container .prev {
+  margin-right: 1.5rem;
+}
+
+.App .page-container .next {
+  margin-left: 1.5rem;
 }
 /*# sourceMappingURL=App.css.map */
