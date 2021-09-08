@@ -1,0 +1,40 @@
+@import "./global.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $bodyFont;
+}
+
+.App {
+  background: $col_2;
+  width: 100%;
+  @include flex-center;
+  flex-direction: column;
+  height: 100vh;
+  & h1 {
+    color: $col_1;
+  }
+
+  & .card-container {
+    height: 70vh;
+    overflow: hidden;
+    width: 60%;
+    max-height: 80vh;
+    background-color: $col_2;
+    @include flex-center;
+    flex-wrap: wrap;
+    margin: 4rem 0 3.5rem;
+  }
+
+  & .page-container {
+    width: 30%;
+    background: $col_1;
+    height: 4rem;
+  }
+}

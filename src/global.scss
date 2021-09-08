@@ -1,0 +1,10 @@
+$col_1: white;
+$col_2: rgb(138, 56, 56);
+$headerFont: nato;
+$bodyFont: serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
